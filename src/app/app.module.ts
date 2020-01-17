@@ -10,7 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
-
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material';
     PostsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,

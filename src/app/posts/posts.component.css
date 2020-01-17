@@ -1,14 +1,66 @@
 .example-card {
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    width:  500px;
+    margin-block-start: 100px;
+    margin-block-end: 100px;
+    background-color: lightgrey;
+    margin: auto;
   }
-  
+
+  .iconUrl {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+  .title{
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .commentButton{
+    border-style: solid;
+    border-radius: 1px;
+    margin-top: 3px;
+    
+  }
+
+  .descUser{
+    font-weight: bold;
+  }
+
+  .descHR{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .likeButton:active{
+    background-color: red;
+  }
+  .shareButton:active{
+    background-color: salmon;
+  }
+
+  .seperate{
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .location{
+    text-decoration-style: dashed;
+    font-style: italic;
+  }
+
   .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+    margin-inline-start: 10px;
+    margin-inline-end: 25px;
+    margin-block-start: 10px;
+    margin-block-end: 25px;
   }
+  .postComment{
+    background: none;
+    border: none;
+  }
+
   .button{
       border: none;
   }
