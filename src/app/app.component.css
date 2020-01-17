@@ -1,0 +1,21 @@
+.flex{
+    flex: 1 1 auto;
+}
+.search{
+    flex: 1 1 auto;
+}
+input[type=search]{
+    background-color: burlywood;
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 1.15px;
+    border-radius: 95px;
+    border-color:gray;
+    text-align: center;
+    text-decoration: underline cadetblue;
+    height: 40px;
+    font-family:  Arial, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    border-collapse: collapse;
+}
