@@ -12,7 +12,7 @@ import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ShareOptionsComponent } from './share-options/share-options.component';
+
 
 
 
@@ -20,7 +20,7 @@ import { ShareOptionsComponent } from './share-options/share-options.component';
   declarations: [
     AppComponent,
     PostsComponent,
-    ShareOptionsComponent
+    
   ],
   imports: [
     HttpClientModule,
