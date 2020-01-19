@@ -12,6 +12,8 @@ import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 
@@ -20,8 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     PostsComponent,
-    
+    DialogComponent,
   ],
+  
   imports: [
     HttpClientModule,
     FormsModule,
@@ -33,7 +36,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
   ],
+  entryComponents:[DialogComponent, PostsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

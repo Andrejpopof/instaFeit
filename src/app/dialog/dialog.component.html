@@ -1,0 +1,21 @@
+<img mat-card-image [src]="data.clickedPost.photoURL" alt="Photo of a Shiba Inu" class="img">
+<div class="scroll">
+    <div class="comment"  *ngFor="let postComment of posts.comments">
+        <mat-card-header>
+                <mat-card-title>{{postComment.username}}</mat-card-title>
+        </mat-card-header>
+        <small><p><b>{{postComment.comment}}</b></p></small>
+        <hr/>
+</div>
+</div>
+
+<div class="comment">
+    
+    <div class="form-inline">
+        <mat-form-field>
+            <input class="input" matInput placeholder="What's on your mind?">
+          </mat-form-field>
+        <button class="btn-primary" mat-raised-button>Comment</button>
+    </div>
+</div>
+   

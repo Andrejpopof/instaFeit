@@ -26,7 +26,7 @@ export class PostsComponent implements OnInit {
 
 
   reset(){
-    this.posts.flagLiked=false;
+    this.posts.flagLiked = false;
   }
  
   onLike(){
