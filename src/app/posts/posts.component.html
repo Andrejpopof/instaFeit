@@ -22,7 +22,7 @@
       <button mat-button value="You like this!" title="Like!" class="likeButton" (click)="onLike()">
         <img class="heartButton" src="/assets/heart.png" alt="Heart">
       </button>
-      <button mat-button title="Share!" class="shareButton">
+      <button (click)="onClickShare()" mat-button title="Share!" class="shareButton" >
         <img class="shareButtonImg" src="/assets/share.png" alt="Share">
       </button>
       

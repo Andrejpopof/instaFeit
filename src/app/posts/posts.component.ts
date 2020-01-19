@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Posts, Comments } from '../classes';
 import { stringify } from 'querystring';
+import { MatDialog } from '@angular/material';
+import { ShareOptionsComponent } from '../share-options/share-options.component';
 
 @Component({
   selector: 'app-posts',
@@ -8,6 +10,8 @@ import { stringify } from 'querystring';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
+
+  public dialog: MatDialog
 
   @Input()
     posts: Posts;
@@ -49,6 +53,9 @@ export class PostsComponent implements OnInit {
     comm = userInput.comment.split(" ");
     this.addComment(userInput.comment);
     }
+
+    onClickShare(){
+       prompt("Share to:");
   }
 
-
+}

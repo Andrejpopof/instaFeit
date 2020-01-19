@@ -12,13 +12,15 @@ import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ShareOptionsComponent } from './share-options/share-options.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    ShareOptionsComponent
   ],
   imports: [
     HttpClientModule,
