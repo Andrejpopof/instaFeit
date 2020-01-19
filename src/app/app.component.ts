@@ -37,12 +37,8 @@ goDark(){
   document.getElementsByName('srch')[0]["style"].background='grey';
   document.getElementsByName('srch')[0]["style"].borderWidth='2px';
   document.getElementsByName('srch')[0]["style"].borderColor='blueviolet';
-  document.getElementsByClassName('postovi')[0]["style"].background='grey';
-
-  
-
-
-
+  document.getElementsByClassName('comment')[0]["style"].background='grey';
+  document.getElementsByClassName('comment')[1]["style"].background='grey';
 }
 
 goLight(){
