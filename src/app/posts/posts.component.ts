@@ -11,12 +11,13 @@ export class PostsComponent implements OnInit {
 
   @Input()
     posts: Posts;
-
     komentari: Comments;
+
 
   constructor() { }
 
   ngOnInit() {
+    this.posts.numberLikes=260;
   }
 
 

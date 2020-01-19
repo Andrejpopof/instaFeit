@@ -4,10 +4,10 @@
     <div>
       <mat-card-header>
         <div mat-card-avatar class="example-header-image">
-          <img mat-card-image class="iconUrl" [src]="posts.userAvatar" alt="Photo of a Shiba Inu">
+          <img mat-card-image class="avatar" [src]="posts.iconUrl" alt="Photo of a Shiba Inu">
         </div>
         <mat-card-title class="title">{{posts.username}}</mat-card-title>
-        <mat-card-subtitle class="location">Lokacija</mat-card-subtitle>
+        <!--<mat-card-subtitle class="location">Lokacija</mat-card-subtitle>----->
       </mat-card-header>
     </div>
     
@@ -19,12 +19,14 @@
     </div>
 
     <mat-card-actions #group="matCardActions">
-      <button mat-button value="You like this!" class="likeButton" (click)="onLike()">
-        <img src="/assets/heart.png" alt="Heart">
+      <button mat-button value="You like this!" title="Like!" class="likeButton" (click)="onLike()">
+        <img class="heartButton" src="/assets/heart.png" alt="Heart">
       </button>
-      <button mat-button class="shareButton">
-        <img src="/assets/share.png" alt="Share">
+      <button mat-button title="Share!" class="shareButton">
+        <img class="shareButtonImg" src="/assets/share.png" alt="Share">
       </button>
+      
+      <p class="numberLikes">Likes: {{ posts.numberLikes }}</p>
     </mat-card-actions>
 
     <mat-card-content>
@@ -44,8 +46,8 @@
         </p>
       </div>
       
-      <form #comment="ngForm" (ngSubmit)="onSubmit(comment.value)">
-        <input class="postComment" type="text" name="comment" placeholder="Add a comment" ngModel>
+      <form #comment="ngForm">
+        <input class="postComment" type="text" name="Comment" placeholder="Add a comment" ngModel>
         <input type="submit" value="Comment" class="commentButton">
       </form>
     </mat-card-content>

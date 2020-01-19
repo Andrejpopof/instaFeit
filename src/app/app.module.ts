@@ -11,7 +11,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     PostsComponent
   ],
   imports: [
+    HttpClientModule,
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,

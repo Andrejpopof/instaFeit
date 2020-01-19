@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Posts } from './classes';
+import { InstagramApiService } from './instagram-api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web-proekt';
+  
+  posts: Posts[] = [];
+
+  constructor(public apiService: InstagramApiService) {
+    this.apiService.getPosts().subscribe((recievedPosts) => {
+      this.posts = recievedPosts;
+    });
+  }
+
+  ngInit(){}
+
   
 }

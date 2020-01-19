@@ -1,13 +1,13 @@
 export interface Posts{
     id: number;
     description: string;
+    iconUrl: string;
     imageUrl: string;
-    userAvatar: string;
+    username: string;
     comments: Comments[];
     numberLikes: number;
     liked: boolean;
     flagLiked: boolean; 
-    username: string;
 }
 
 export interface Comments{

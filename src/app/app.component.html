@@ -1,4 +1,5 @@
-<mat-toolbar color="black" style="background-color:burlywood; z-index: 1; position: fixed;">
+
+  <mat-toolbar color="black" style="background-color:burlywood; z-index: 1; position: fixed; margin-block-end: auto; margin-block-start: auto;">
     
     <mat-icon>fingerprint</mat-icon>
    <span>Instagram</span>
@@ -30,6 +31,10 @@
   </mat-menu>
    </span>
 </mat-toolbar>
-<app-posts></app-posts>
+
+
+<div class="postsDiv" *ngFor="let post of posts">
+  <app-posts [posts]="post"></app-posts>
+</div>
 
 
