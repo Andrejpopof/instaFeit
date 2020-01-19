@@ -1,0 +1,12 @@
+.img{
+    width: 50%;
+    height: 100%;
+}
+.comment{
+    width: 300px;
+    float: right;
+}
+.scroll {
+    overflow: auto;
+    height: 80%;
+  }

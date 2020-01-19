@@ -34,7 +34,7 @@
 
 
 <div class="postsDiv" *ngFor="let post of posts">
-  <app-posts [posts]="post"></app-posts>
+  <app-posts [posts]="post" (click)="openComments()"></app-posts>
 </div>
 
 
