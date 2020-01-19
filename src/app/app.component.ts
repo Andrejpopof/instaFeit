@@ -11,6 +11,7 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class AppComponent {
   title = 'web-proekt';
+  color: 'burlywood';
   posts: Posts[] = [];
 
   constructor(public dialog: MatDialog , public apiService: InstagramApiService) {
@@ -29,6 +30,27 @@ export class AppComponent {
       console.log( 'Dialog closed' );
     });
   }
+
+goDark(){
+  document.body.style.backgroundColor = 'black';
+  document.getElementsByClassName('dark')[0]["style"].background = 'grey';
+  document.getElementsByName('srch')[0]["style"].background='grey';
+  document.getElementsByName('srch')[0]["style"].borderWidth='2px';
+  document.getElementsByName('srch')[0]["style"].borderColor='blueviolet';
+  document.getElementsByClassName('comment')[0]["style"].background='grey';
+  document.getElementsByClassName('comment')[1]["style"].background='grey';
+}
+
+goLight(){
+  document.body.style.backgroundColor = 'white';
+  document.getElementsByClassName('dark')[0]["style"].background = 'burlywood';
+  document.getElementsByName('srch')[0]["style"].background = 'burlywood';
+  document.getElementsByName('srch')[0]["style"].borderWidth ='1.15px';
+  document.getElementsByName('srch')[0]["style"].borderColor='grey';
+  document.getElementsByClassName('postovi')[0]["style"].background='white';
+
+
+}
 
   ngInit(){}
 }

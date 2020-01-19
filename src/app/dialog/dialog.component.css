@@ -6,6 +6,7 @@
     width: 300px;
     float: right;
     margin-bottom: 1px;
+    background-color: gray;
 }
 .scroll {
     overflow: auto;
