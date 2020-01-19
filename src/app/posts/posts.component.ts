@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Posts, Comments } from '../classes';
 import { stringify } from 'querystring';
 import { MatDialog } from '@angular/material';
-import { ShareOptionsComponent } from '../share-options/share-options.component';
+
 
 @Component({
   selector: 'app-posts',
