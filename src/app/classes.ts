@@ -15,3 +15,7 @@ export interface Comments{
     comment: string;
 }
 
+export interface shareOptions{
+    destination: string;
+    image: string;
+}
