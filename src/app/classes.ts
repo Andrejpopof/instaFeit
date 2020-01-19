@@ -7,10 +7,10 @@ export interface Posts{
     comments: Comments[];
     numberLikes: number;
     liked: boolean;
-    flagLiked: boolean; 
+    flagLiked: boolean;
 }
 
-export interface Comments{
+export interface Comments {
     username: string;
     comment: string;
 }

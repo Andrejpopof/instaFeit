@@ -24,7 +24,7 @@ import { DialogComponent } from './dialog/dialog.component';
     PostsComponent,
     DialogComponent,
   ],
-  entryComponents:[DialogComponent],
+  
   imports: [
     HttpClientModule,
     FormsModule,
@@ -38,6 +38,7 @@ import { DialogComponent } from './dialog/dialog.component';
     MatIconModule,
     MatDialogModule,
   ],
+  entryComponents:[DialogComponent, PostsComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

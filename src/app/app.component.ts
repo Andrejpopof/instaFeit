@@ -11,7 +11,6 @@ import {MatDialog} from '@angular/material/dialog';
 })
 export class AppComponent {
   title = 'web-proekt';
-  
   posts: Posts[] = [];
 
   constructor(public dialog: MatDialog , public apiService: InstagramApiService) {
@@ -21,7 +20,7 @@ export class AppComponent {
   }
   openComments() {
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '900px',
+      width: '750px',
       height: '700px',
       data: { clickedPost: this.posts}
       });
@@ -32,6 +31,4 @@ export class AppComponent {
   }
 
   ngInit(){}
-
-  
 }

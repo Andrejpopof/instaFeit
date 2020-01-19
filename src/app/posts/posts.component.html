@@ -20,10 +20,10 @@
 
     <mat-card-actions #group="matCardActions">
       <button mat-button value="You like this!" title="Like!" class="likeButton" (click)="onLike()">
-        <img class="heartButton" src="/assets/heart.png" alt="Heart">
+        <mat-icon [ngStyle]="{'color':'red'}">favorite</mat-icon>
       </button>
       <button (click)="onClickShare()" mat-button title="Share!" class="shareButton" >
-        <img class="shareButtonImg" src="/assets/share.png" alt="Share">
+        <mat-icon>share</mat-icon>
       </button>
       
       <p class="numberLikes">Likes: {{ posts.numberLikes }}</p>
@@ -48,7 +48,8 @@
       
       <form #comment="ngForm">
         <input class="postComment" type="text" name="Comment" placeholder="Add a comment" ngModel>
-        <input type="submit" value="Comment" class="commentButton">
+        <button mat-raised-button class="commentButton">Comment </button>
+
       </form>
     </mat-card-content>
 
