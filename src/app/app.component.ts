@@ -19,11 +19,11 @@ export class AppComponent {
       this.posts = recievedPosts;
     });
   }
-  openComments() {
+  openComments(post: Posts) {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '750px',
       height: '700px',
-      data: { clickedPost: this.posts}
+      data: { clickedPost: post}
       });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -15,7 +15,10 @@ export interface Comments {
     comment: string;
 }
 
-export interface shareOptions{
-    destination: string;
-    image: string;
+export class  PostComment {
+    id: number;
+    fullName: string;
+    accountName: string;
+    photoUrl: string;
+    comment: string;
 }
