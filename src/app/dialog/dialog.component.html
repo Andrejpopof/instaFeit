@@ -1,4 +1,4 @@
-<img mat-card-image [src]="data.clickedPost.imageUrl" alt="Photo of a Shiba Inu" class="sizeImg2 float-left">
+<img mat-card-image [src]="data.clickedPost.imageUrl" alt="Photo of a Doggo" class="img">
 <div class="scroll">
         <div class="comment"  *ngFor="let postComment of postComments">
                 <mat-card-header>
@@ -9,11 +9,10 @@
                 <p><b>{{postComment.comment}}</b></p>
         </div>
 </div>
-
-<div class="comment">
-
+<br><hr><br>
+<div class="komentar">
 <mat-form-field>
-  <input matInput placeholder="What's on your mind?">
+  <input matInput placeholder="Write a comment">
 </mat-form-field>
 <button mat-raised-button (click)="onComment()">Comment</button>
 </div>

@@ -21,8 +21,8 @@ export class AppComponent {
   }
   openComments(post: Posts) {
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '750px',
-      height: '700px',
+      width: '850px',
+      height: '650px',
       data: { clickedPost: post}
       });
 
