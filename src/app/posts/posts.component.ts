@@ -42,7 +42,7 @@ export class PostsComponent implements OnInit {
     }
   }
 
-  addComment(kom: any){
+  /**addComment(kom: any){
     this.komentari.comment=kom;
     this.komentari.username="Default";
     this.posts.comments.push(this.komentari);
@@ -52,7 +52,7 @@ export class PostsComponent implements OnInit {
     var comm: string[];
     comm = userInput.comment.split(" ");
     this.addComment(userInput.comment);
-    }
+    }**/
 
     onClickShare(){
        prompt("Share to:");
