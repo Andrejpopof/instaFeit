@@ -14,21 +14,21 @@ export interface DialogData{
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
+  newComment: PostComment[] = [];
   ngOnInit() {
   }
-
   @Input()
   postComments: PostComment[] = [];
   posts: Posts;
    constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-      /**this.newComment= { id: this.data.clickedPost.id, 
-        accountName: '@FLV.MCA', 
-        comment: '',
+     /* this.newComment= { id: this.data.clickedPost.id, 
+        accountName: '@TheDoctor', 
+        comment: 'Soo good',
         photoUrl: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png',
-        fullName: 'Filip Vilevski'};**/
-/********************** Ovde dole kaj sho se punat postComments da se smenat stvarive  */
+        fullName: 'Gligor Ivanov'};*/
+
 this.postComments = [
 { id: 1,  fullName: 'John Doe'      , accountName: '@JohnDoe'          , comment: 'Awesome Dog',                     photoUrl:  'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png' },
 { id: 2,  fullName: 'Tom Fisher'    , accountName: '@Fisher'           , comment: 'Love it!!!',                      photoUrl:  'https://images.clipartlogo.com/files/istock/previews/1020/102071463-flat-design-avatar-male-character-icon-vector.jpg' },
@@ -42,8 +42,9 @@ this.postComments = [
 { id: 10, fullName: 'Milton Thomas' , accountName: '@MiltonThomas2'    , comment: 'Great !!! :)',                    photoUrl:  'https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg' }
 ];
 }
+
+
     }
 
- 
 
 

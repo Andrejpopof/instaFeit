@@ -13,5 +13,4 @@ export class InstagramApiService{
     getPosts(): Observable<Posts[]>{
         return this.http.get<Posts[]>('http://5dfbcd3d0301690014b8fff9.mockapi.io/PostDetails');
     }
-    
 }

@@ -1,6 +1,7 @@
 .img{
-    width: 50%;
+    width: 60%;
     height: 100%;
+    float: left;
 }
 .comment{
     width: 300px;
@@ -13,5 +14,10 @@
     height: 80%;
   }
 .btn-primary {
-    background-color: wheat;
+    background-color: gray;
+}
+.komentar{
+    width: 300px;
+    float: right;
+    ;
 }
