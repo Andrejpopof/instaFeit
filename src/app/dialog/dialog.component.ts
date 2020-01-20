@@ -14,20 +14,20 @@ export interface DialogData{
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-  newComment: PostComment[] = [];
-  ngOnInit() {
-  }
   @Input()
   postComments: PostComment[] = [];
   posts: Posts;
+  newComment: PostComment[] = [];
+  ngOnInit() {
+  }
    constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-     /* this.newComment= { id: this.data.clickedPost.id, 
-        accountName: '@TheDoctor', 
-        comment: 'Soo good',
+     this.newComment= {id: this.data.clickedPost.id,
+        fullName: 'Gligor Ivanov',
+        accountName: '@TheDoctor',
         photoUrl: 'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png',
-        fullName: 'Gligor Ivanov'};*/
+        comment: '',};
 
 this.postComments = [
 { id: 1,  fullName: 'John Doe'      , accountName: '@JohnDoe'          , comment: 'Awesome Dog',                     photoUrl:  'https://cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_960_720.png' },
@@ -42,9 +42,11 @@ this.postComments = [
 { id: 10, fullName: 'Milton Thomas' , accountName: '@MiltonThomas2'    , comment: 'Great !!! :)',                    photoUrl:  'https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg' }
 ];
 }
-
-
-    }
+onComment(){
+  this.postComments.push(this.newComment);
+  this.newComment.comment='';
+}
+ }
 
 
 
