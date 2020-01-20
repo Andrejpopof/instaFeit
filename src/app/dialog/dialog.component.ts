@@ -17,7 +17,7 @@ export class DialogComponent implements OnInit {
   @Input()
   postComments: PostComment[] = [];
   posts: Posts;
-  newComment: PostComment[] = [];
+  newComment: PostComment;
   ngOnInit() {
   }
    constructor(
@@ -44,7 +44,7 @@ this.postComments = [
 }
 onComment(){
   this.postComments.push(this.newComment);
-  this.newComment.comment='';
+  //this.newComment.comment='';
 }
  }
 
